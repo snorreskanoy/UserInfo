@@ -8,7 +8,7 @@ import argparse
 #if __name__ == "__main__":
 parser = argparse.ArgumentParser(description='Get latest actions from Capture storage')
 parser.add_argument('-c', '--count',
-                    help='Amout of actions to get (defaulu=100)', required=False, default=100)
+                    help='Amout of actions to get (default=100)', required=False, default=100)
 options = parser.parse_args()
 
 # Converting size view
