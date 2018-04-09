@@ -50,7 +50,7 @@ def filetype(filename):
 for item in cont['events']:
     counter += 1
     total_size += item['size']
-    print(filetype(item['filename']), item['operation'], "on:", time.asctime(time.localtime(item['timestamp'])),"by:", item['computer_name'], "Size:", humansize(item['size']))
+    print(filetype(item['filename']),"created:",time.asctime(time.localtime(item['ctime'])), item['operation'], "on:", time.asctime(time.localtime(item['timestamp'])),"by:", item['computer_name'], "Size:", humansize(item['size']))
     #print("----")
 
 # Printing total numbers for fetched data
