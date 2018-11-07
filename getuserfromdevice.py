@@ -9,7 +9,7 @@ parser.add_argument('-i', '--ConnectId',
 options = parser.parse_args()
 
 def get_connect_ids(device_id):
-    url = "https://t13-staging.cptr.no/st/4/connect_user/" + device_id + "/devices?auth=[auth]"
+    url = "https://a0.cptr.no/st/4/connect_user/" + device_id + "/devices?auth=[auth]"
     req = urllib.request.Request(url)
     r = urllib.request.urlopen(req).read()
     cont = json.loads(r.decode('utf-8'))
